@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IssuesTask</string>
+    <string name="back_arrow">back_arrow</string>
+    <string name="title_of_app_bar">Issues</string>
+    <string name="none">NONE</string>
+    <string name="CreatedAt">Created At</string>
+    <string name="open">Open</string>
+
+
+</resources>
