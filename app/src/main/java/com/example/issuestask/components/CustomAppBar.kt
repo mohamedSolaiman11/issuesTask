@@ -1,9 +1,16 @@
 import androidx.annotation.StringRes
+import androidx.compose.foundation.BorderStroke
+import androidx.compose.foundation.background
+import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
+import androidx.compose.material3.Divider
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
@@ -29,19 +36,21 @@ fun CustomAppBar(
     modifier: Modifier = Modifier,
     titleStyle: TextStyle = MaterialTheme.typography.titleLarge,
     color: Color = MaterialTheme.colorScheme.primary,
-    showBackButton: Boolean = true,
+    showBackButton: Boolean = false,
     onBackButtonClicked: () -> Unit,
 ) {
     TopAppBar(
         title = {
             Box(
-                modifier = Modifier.fillMaxSize(),
+                modifier = Modifier.fillMaxSize().background(color = Color.White),
+                
                 contentAlignment = Alignment.Center
             ) {
                 Text(
                     text = stringResource(title),
                     style = titleStyle,
                 )
+
             }
         },
         navigationIcon = {
