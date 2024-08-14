@@ -5,6 +5,11 @@
     <string name="none">NONE</string>
     <string name="CreatedAt">Created At</string>
     <string name="open">Open</string>
+    <string name="appBarTitleInErrorPage">GitHub Repositories</string>
+    <string name="descForErrorImage">This image explain that there was an error</string>
+    <string name="somethingWentWrong">Something went wrong</string>
+    <string name="networkError">Network Error</string>
+    <string name="retry">RETRY</string>
 
 
 </resources>

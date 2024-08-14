@@ -1,4 +1,5 @@
 package com.example.issuestask.screens
+import ErrorScreen
 import IssuesScreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,7 +11,7 @@ class Home : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            IssuesScreen()
+            ErrorScreen()
         }
     }
 }
@@ -23,5 +24,5 @@ class Home : ComponentActivity() {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    IssuesScreen()
+    ErrorScreen()
 }
