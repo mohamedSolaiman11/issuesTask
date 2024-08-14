@@ -43,7 +43,7 @@ fun CustomAppBar(
         title = {
             Box(
                 modifier = Modifier.fillMaxSize().background(color = Color.White),
-                
+
                 contentAlignment = Alignment.Center
             ) {
                 Text(
